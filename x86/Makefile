@@ -21,7 +21,10 @@ power: power.o
 power_fast: power_fast.o
 	$(LD) -o power_fast power_fast.o $(LDFLAGS)
 
-ALL=exit maximum factorial power power_fast
+upcase: upcase.o
+	$(LD) -o upcase upcase.o $(LDFLAGS)
+
+ALL=exit maximum factorial power power_fast upcase
 
 all: $(ALL)
 
